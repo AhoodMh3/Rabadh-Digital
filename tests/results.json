@@ -1,0 +1,238 @@
+{
+  "summary": {
+    "date": "2026-10-23T19:55:04.285Z",
+    "total": 35,
+    "passed": 35,
+    "failed": 0
+  },
+  "results": [
+    {
+      "group": "static",
+      "name": "Arabic and English dictionaries have identical keys",
+      "status": "pass",
+      "details": [
+        "557 keys in each file"
+      ]
+    },
+    {
+      "group": "static",
+      "name": "No empty translation values",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "static",
+      "name": "English file contains no Arabic text (except the Arabic language label)",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "static",
+      "name": "Arabic file contains no untranslated English (only allowed technical terms)",
+      "status": "pass",
+      "details": [
+        "Technical terms kept in Latin script: SHA-256, AR, a–f, HTTP, HTTPS"
+      ]
+    },
+    {
+      "group": "static",
+      "name": "Project identity (name & slogan) matches the specification",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "static",
+      "name": "Game: same number of questions/options in both languages; one shared answer key",
+      "status": "pass",
+      "details": [
+        "Correct answers are stored once (by index) in js/data/content.js and used for both languages."
+      ]
+    },
+    {
+      "group": "static",
+      "name": "translations.bundle.js (file:// fallback) is in sync with the JSON files",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "static",
+      "name": "URL analyzer returns language-neutral indicator ids (sample cases)",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "language",
+      "name": "First visit (no saved preference) opens in Arabic, RTL, with English option visible",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "pages-ar-desktop",
+      "name": "All 8 sections render fully in Arabic (desktop)",
+      "status": "pass",
+      "details": [
+        "Checked: lang/dir attributes, page title, wrong-language text in visible + screen-reader text and placeholders/aria-labels, missing keys, horizontal overflow."
+      ]
+    },
+    {
+      "group": "pages-ar-mobile",
+      "name": "All 8 sections render fully in Arabic (mobile)",
+      "status": "pass",
+      "details": [
+        "Checked: lang/dir attributes, page title, wrong-language text in visible + screen-reader text and placeholders/aria-labels, missing keys, horizontal overflow."
+      ]
+    },
+    {
+      "group": "pages-en-desktop",
+      "name": "All 8 sections render fully in English (desktop)",
+      "status": "pass",
+      "details": [
+        "Checked: lang/dir attributes, page title, wrong-language text in visible + screen-reader text and placeholders/aria-labels, missing keys, horizontal overflow."
+      ]
+    },
+    {
+      "group": "pages-en-mobile",
+      "name": "All 8 sections render fully in English (mobile)",
+      "status": "pass",
+      "details": [
+        "Checked: lang/dir attributes, page title, wrong-language text in visible + screen-reader text and placeholders/aria-labels, missing keys, horizontal overflow."
+      ]
+    },
+    {
+      "group": "language",
+      "name": "Switching language keeps the current section, scroll position and state; preference survives reload",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "language",
+      "name": "Language switch is reachable and works from every section (desktop + mobile)",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "language",
+      "name": "Keyboard: language menu opens with keyboard, Escape closes it",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "buttons-ar",
+      "name": "Navigation menu works (desktop links + mobile menu) in ar",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "buttons-en",
+      "name": "Navigation menu works (desktop links + mobile menu) in en",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "tour-ar",
+      "name": "Tour: next/previous, map stops, arrow keys follow RTL direction",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "tour-en",
+      "name": "Tour: next/previous, map stops, arrow keys follow LTR direction",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "library-ar",
+      "name": "Library: search, filters, details popup and empty-state message in ar",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "library-en",
+      "name": "Library: search, filters, details popup and empty-state message in en",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "hash-ar",
+      "name": "SHA-256: text + file hashing, match/mismatch/invalid/empty messages in ar",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "hash-en",
+      "name": "SHA-256: text + file hashing, match/mismatch/invalid/empty messages in en",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "hash",
+      "name": "Pure-JS SHA-256 fallback matches Node crypto (5 vectors)",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "links-ar",
+      "name": "Link checker: errors, indicators and explanations in ar; link text never altered",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "links-en",
+      "name": "Link checker: errors, indicators and explanations in en; link text never altered",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "game",
+      "name": "Same answer key, scores and outcome in Arabic and English (perfect run, losing run, mixed run)",
+      "status": "pass",
+      "details": [
+        "perfect: 12 questions, final score 120, outcome win — identical in both languages",
+        "losing: 3 questions, final score 0, outcome lose — identical in both languages",
+        "mixed: 12 questions, final score 90, outcome lose — identical in both languages"
+      ]
+    },
+    {
+      "group": "game",
+      "name": "Switching language in the middle of the game keeps question, score and shields",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "game-ar",
+      "name": "Game popups (rules, quit confirmation) are translated in ar",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "game-en",
+      "name": "Game popups (rules, quit confirmation) are translated in en",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "awareness-ar",
+      "name": "Awareness tips toggle, checklist progress and footer help popup in ar",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "awareness-en",
+      "name": "Awareness tips toggle, checklist progress and footer help popup in en",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "language",
+      "name": "Works when opened directly from disk (file://) using the translation bundle",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "group": "language",
+      "name": "A missing (null) translation shows an honest notice instead of invented text",
+      "status": "pass",
+      "details": []
+    }
+  ]
+}

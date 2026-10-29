@@ -1,0 +1,14 @@
+{
+  "name": "rabadh-digital",
+  "version": "1.0.0",
+  "private": true,
+  "description": "قلعة الربض بنسخة رقمية — Al-Rabadh Castle: A Digital Experience (bilingual Arabic/English static site)",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "build:translations": "node tools/build-translations.mjs",
+    "test": "node tools/build-translations.mjs && node tests/run-tests.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  }
+}

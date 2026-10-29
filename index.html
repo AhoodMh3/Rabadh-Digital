@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>قلعة الربض بنسخة رقمية</title>
+  <meta name="description" content="منصة تعليمية ثنائية اللغة تجمع بين تراث قلعة عجلون (قلعة الربض) ومهارات الأمن السيبراني.">
+  <meta property="og:locale" content="ar_JO">
+  <meta name="color-scheme" content="light dark">
+  <!-- Apply the saved language/direction before first paint (prevents a direction "flash"). -->
+  <script>
+    (function () {
+      try {
+        var l = localStorage.getItem('rabadh.lang');
+        var en = l === 'en';
+        document.documentElement.lang = en ? 'en' : 'ar';
+        document.documentElement.dir = en ? 'ltr' : 'rtl';
+      } catch (e) { document.documentElement.lang = 'ar'; document.documentElement.dir = 'rtl'; }
+    })();
+  </script>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">تخطَّ إلى المحتوى الرئيسي</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#/home" data-i18n-attr="aria-label:nav.homeAria">
+        <img class="brand__logo" src="assets/img/logo.svg" alt="" width="40" height="40">
+        <span class="brand__text">
+          <span class="brand__name" data-i18n="meta.siteName">قلعة الربض بنسخة رقمية</span>
+          <span class="brand__tagline" data-i18n="meta.tagline">من عراقة الماضي إلى أمان المستقبل</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" id="primary-nav" data-i18n-attr="aria-label:nav.label" aria-label="القائمة الرئيسية">
+        <ul class="primary-nav__list">
+          <li><a href="#/home" data-route="home" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="#/tour" data-route="tour" data-i18n="nav.tour">الجولة الرقمية</a></li>
+          <li><a href="#/library" data-route="library" data-i18n="nav.library">المكتبة</a></li>
+          <li><a href="#/hash" data-route="hash" data-i18n="nav.hash">التحقق من الملفات</a></li>
+          <li><a href="#/links" data-route="links" data-i18n="nav.links">فحص الروابط</a></li>
+          <li><a href="#/awareness" data-route="awareness" data-i18n="nav.awareness">التوعية</a></li>
+          <li><a href="#/game" data-route="game" data-i18n="nav.game">اللعبة</a></li>
+          <li><a href="#/about" data-route="about" data-i18n="nav.about">عن المشروع</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" id="lang-switch">
+          <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
+            <span class="visually-hidden" data-i18n="lang.switchLabel">اختيار لغة الموقع</span>
+            <span class="lang-btn__label" id="lang-current" lang="ar">العربية | AR</span>
+            <span class="lang-btn__caret" aria-hidden="true"></span>
+          </button>
+          <ul class="lang-menu" id="lang-menu" role="menu" hidden data-i18n-attr="aria-label:lang.switchLabel">
+            <li role="none"><button type="button" role="menuitemradio" aria-checked="true" data-lang="ar" lang="ar" dir="rtl" class="keep-lang">العربية | AR</button></li>
+            <li role="none"><button type="button" role="menuitemradio" aria-checked="false" data-lang="en" lang="en" dir="ltr" class="keep-lang">English | EN</button></li>
+          </ul>
+        </div>
+        <button type="button" class="icon-btn nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" data-i18n-attr="aria-label:nav.openMenu">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div id="view" class="view" aria-live="off"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo.svg" alt="" width="44" height="44">
+        <div>
+          <p class="footer-brand__name" data-i18n="meta.siteName">قلعة الربض بنسخة رقمية</p>
+          <p class="footer-brand__tagline" data-i18n="meta.tagline">من عراقة الماضي إلى أمان المستقبل</p>
+          <p class="footer-about" data-i18n="footer.about"></p>
+        </div>
+      </div>
+      <nav class="footer-links" aria-labelledby="footer-links-title">
+        <h2 class="footer-title" id="footer-links-title" data-i18n="footer.quickLinks">روابط سريعة</h2>
+        <ul>
+          <li><a href="#/tour" data-i18n="nav.tour"></a></li>
+          <li><a href="#/library" data-i18n="nav.library"></a></li>
+          <li><a href="#/hash" data-i18n="nav.hash"></a></li>
+          <li><a href="#/links" data-i18n="nav.links"></a></li>
+          <li><a href="#/awareness" data-i18n="nav.awareness"></a></li>
+          <li><a href="#/game" data-i18n="nav.game"></a></li>
+          <li><a href="#/about" data-i18n="nav.about"></a></li>
+        </ul>
+      </nav>
+      <div class="footer-meta">
+        <button type="button" class="btn btn--ghost btn--sm" id="help-btn" data-i18n="footer.help">تعليمات الاستخدام</button>
+        <p class="footer-privacy" data-i18n="footer.privacy"></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p id="footer-rights" data-i18n="footer.rights"></p>
+    </div>
+  </footer>
+
+  <div id="modal-root"></div>
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="false"></div>
+
+  <noscript>
+    <p class="noscript">يتطلب هذا الموقع تفعيل JavaScript. — This site requires JavaScript to be enabled.</p>
+  </noscript>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/lib/sha256.js"></script>
+  <script src="js/lib/url-analyzer.js"></script>
+  <script src="js/data/content.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/tour.js"></script>
+  <script src="js/pages/library.js"></script>
+  <script src="js/pages/hash.js"></script>
+  <script src="js/pages/links.js"></script>
+  <script src="js/pages/awareness.js"></script>
+  <script src="js/pages/game.js"></script>
+  <script src="js/pages/about.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
