@@ -2,7 +2,6 @@
 
 **From Historic Heritage to a Secure Digital Future**  
 
-From Historic Heritage to a Secure Digital Future
 
 <img width="1331" height="592" alt="image" src="https://github.com/user-attachments/assets/450a2596-24e2-4a26-8f80-835fb1419c23" />
 
