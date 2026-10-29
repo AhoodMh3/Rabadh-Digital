@@ -90,25 +90,6 @@ npm install
 npx playwright install chromium
 npm test
 ```
-Project Structure
-
-.
-├── index.html
-    ├── css/
-    ├── js/
-│       ├── i18n.js
-│       └── data/
-│           └── content.js
-├── translations/
-│   ├── ar.json
-│   ├── en.json
-│   └── translations.bundle.js
-├── tests/
-│   └── run-tests.mjs
-├── tools/
-│   └── build-translations.mjs
-├── package.json
-└── README.md
 
 Note: The structure above highlights the main files.
 
