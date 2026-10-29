@@ -2,14 +2,14 @@
 
 **From Historic Heritage to a Secure Digital Future**  
 
-من عراقة الماضي إلى أمان المستقبل
+From Historic Heritage to a Secure Digital Future
 
 <img width="1331" height="592" alt="image" src="https://github.com/user-attachments/assets/450a2596-24e2-4a26-8f80-835fb1419c23" />
 
 
-A bilingual (Arabic/English) educational website that combines cultural heritage, interactive digital experiences, and cybersecurity awareness.
+An interactive digital experience inspired by Al-Rabadh Castle in Jordan, combining cultural heritage, bilingual web technologies, and cybersecurity awareness.
 
-موقع تعليمي تفاعلي ثنائي اللغة يجمع بين التراث الثقافي والتجارب الرقمية التفاعلية والتوعية بالأمن السيبراني.
+Al-Rabadh Castle transforms cultural heritage into an educational digital experience. The website allows users to explore the castle through interactive sections while discovering digital resources, file integrity verification using SHA-256, link inspection, and cybersecurity awareness activities.
 
 ## Features
 
@@ -90,7 +90,30 @@ npm install
 npx playwright install chromium
 npm test
 ```
+Project Structure
 
-## License
+.
+├── index.html
+    ├── css/
+    ├── js/
+│       ├── i18n.js
+│       └── data/
+│           └── content.js
+├── translations/
+│   ├── ar.json
+│   ├── en.json
+│   └── translations.bundle.js
+├── tests/
+│   └── run-tests.mjs
+├── tools/
+│   └── build-translations.mjs
+├── package.json
+└── README.md
 
-No license specified yet.
+Note: The structure above highlights the main files.
+
+Why Al-Rabadh Castle?
+
+Cultural heritage deserves to be preserved, understood, and passed on to future generations. This project brings that idea into the digital world by connecting Jordan's heritage with technology and cybersecurity awareness.
+
+Inspired by Jordan's heritage. Built for a safer digital future.
