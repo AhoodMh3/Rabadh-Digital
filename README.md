@@ -91,8 +91,6 @@ npx playwright install chromium
 npm test
 ```
 
-Note: The structure above highlights the main files.
-
 Why Al-Rabadh Castle?
 
 Cultural heritage deserves to be preserved, understood, and passed on to future generations. This project brings that idea into the digital world by connecting Jordan's heritage with technology and cybersecurity awareness.
