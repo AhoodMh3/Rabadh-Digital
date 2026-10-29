@@ -2,9 +2,10 @@
 
 **From Historic Heritage to a Secure Digital Future**  
 
-<img width="1311" height="562" alt="image" src="https://github.com/user-attachments/assets/95083f17-99b8-486b-9a72-552df50298ba" />
-
 من عراقة الماضي إلى أمان المستقبل
+
+<img width="1331" height="592" alt="image" src="https://github.com/user-attachments/assets/450a2596-24e2-4a26-8f80-835fb1419c23" />
+
 
 A bilingual (Arabic/English) educational website that combines cultural heritage, interactive digital experiences, and cybersecurity awareness.
 
