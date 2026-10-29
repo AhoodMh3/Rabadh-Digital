@@ -48,7 +48,7 @@ Built with core web technologies without external frontend libraries.
 ### Run Locally
 
 Open `index.html` in your browser. 
-https://ahoodmh3.github.io/Rabadh-Digital
+
 
 Alternatively, install the project dependencies and start the local server:
 
